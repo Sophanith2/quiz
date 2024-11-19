@@ -24,9 +24,7 @@ class CustomCheckBox extends StatelessWidget {
           Icon(
             isSelect ? Icons.check_box_outlined : Icons.check_box_outline_blank,
             size: 25,
-            color: isSelect
-                ? AppColor.primaryColor
-                : Theme.of(context).colorScheme.onPrimaryContainer,
+            color: isSelect == true ? AppColor.primaryColor : null,
           ),
           const SizedBox(
             width: 10,
